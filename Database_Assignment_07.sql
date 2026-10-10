@@ -330,7 +330,7 @@ GO
 -- ============================================================
 CREATE OR ALTER PROCEDURE dbo.AddDrugAdministration
     @NurseId INT,
-    @DrugCode NVARCHAR(50),
+    @DrugCode INT,
     @PatientId INT,
     @Dosage NVARCHAR(100),
     @AdministrationDate DATE,
@@ -448,7 +448,7 @@ GO
 -- ============================================================
 CREATE OR ALTER PROCEDURE dbo.DeleteDrugAdministration
     @NurseId INT,
-    @DrugCode NVARCHAR(50),
+    @DrugCode INT,
     @PatientId INT,
     @AdministrationDate DATE,
     @AdministrationTime TIME(0)
